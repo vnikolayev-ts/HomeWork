@@ -1,0 +1,88 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flex-Layout für Hauptachsenanordnung */
+    flex-direction: row; /* Ausrichtung in einer Reihe */
+    justify-content: space-between; /* Platzierung der Elemente am Anfang und Ende der Reihe */
+    align-items: flex-start; /* Ausrichtung der Elemente oben */
+}
+
+nav {
+    background-color: #333;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#contactForm {
+    margin-top: 20px; /* Abstand zum vorherigen Element */
+}
+
+/* Formular-Gruppe */
+.form-group {
+    margin-bottom: 20px; /* Abstand zwischen den Formulargruppen */
+}
+
+/* Labels */
+label {
+    display: inline-block;
+    width: 150px; /* Mindestbreite der Labels */
+    font-weight: bold;
+}
+
+/* Eingabefelder */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 170px); /* Breite abzüglich der Breite des Labels und des zusätzlichen Abstands */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Submit-Button */
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
