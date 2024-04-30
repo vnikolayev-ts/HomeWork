@@ -1,0 +1,31 @@
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: #333; /* Hintergrundfarbe des Navigationsbereichs */
+  }
+  
+  .navigation {
+    list-style-type: none; /* Entfernt die standardmäßige Listenformatierung */
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .navigation li {
+    margin: 0 10px; /* Abstand zwischen den Links anpassen */
+  }
+  
+  .navigation li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; /* Innenabstand der Links anpassen */
+    border-radius: 5px; /* Optionale abgerundete Ecken */
+  }
+  
+  .navigation li a:hover {
+    background-color: #555; /* Hintergrundfarbe ändern, wenn Maus über Link */
+  }
+  
