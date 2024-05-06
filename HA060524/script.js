@@ -26,4 +26,12 @@ let carModels = [
   { brand: "Toyota", model: "Corolla" },
   { brand: "Ford", model: "Focus" }
 ];
+
 let models = carModels.map(car => car.model);
+
+let carModelsFormatted = carModels.map(car => `[ ${car.brand} - ${car.model} ]`);
+
+
+console.log("Ausgabe - Funktion (5+3): Ergebnis" + add(5, 3));
+console.log("Ausgabe - Models: " +   models);
+console.log("Ausgabe - Formatiert - Models: " +   carModelsFormatted);
