@@ -1,24 +1,32 @@
 // Umwandlung der add-Funktion in eine Arrow Function
 const add = (a, b) => a + b;
+let numbers = [5, 11, 8, 20, 7, 15];
+let animals = ["Lion", "Tiger", "Elephant", "Giraffe", "Zebra"];
+let animalsUpperCase = animals.map(animal => animal.toUpperCase());
+console.log(animalsUpperCase);
 
-// Verwendung einer Arrow Function mit .filter(), um Autos mit einer PS-Zahl größer als 200 zu filtern
-let cars = [
-  { brand: "BMW", horsepower: 220 },
-  { brand: "Mercedes", horsepower: 180 },
-  { brand: "Audi", horsepower: 250 },
-  { brand: "Toyota", horsepower: 150 },
-  { brand: "Ford", horsepower: 190 }
+
+
+let animalsLowerCase = animals.map(animal => animal.toLowerCase());
+console.log(animalsLowerCase);
+
+let people = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 30 },
+  { name: "Charlie", age: 35 },
 ];
-let powerfulCars = cars.filter(car => car.horsepower > 200);
+let names = people.map(person => person.name);
+console.log(names);
+let namesAge = people.map(person => `[ ${person.name} - ${person.age} ]`);
+console.log(namesAge);
 
-// Erzeugung eines neuen Arrays mit Automarken in Großbuchstaben
+
+
 let carBrands = ["BMW", "Mercedes", "Audi", "Toyota", "Ford"];
 let carBrandsUpperCase = carBrands.map(brand => brand.toUpperCase());
 
-// Erzeugung eines neuen Arrays mit Automarken in Kleinbuchstaben
 let carBrandsLowerCase = carBrands.map(brand => brand.toLowerCase());
 
-// Erzeugung eines neuen Arrays, das nur die Modellnamen der Autos enthält
 let carModels = [
   { brand: "BMW", model: "X5" },
   { brand: "Mercedes", model: "E-Class" },
@@ -32,6 +40,5 @@ let models = carModels.map(car => car.model);
 let carModelsFormatted = carModels.map(car => `[ ${car.brand} - ${car.model} ]`);
 
 
-console.log("Ausgabe - Funktion (5+3): Ergebnis" + add(5, 3));
 console.log("Ausgabe - Models: " +   models);
 console.log("Ausgabe - Formatiert - Models: " +   carModelsFormatted);
