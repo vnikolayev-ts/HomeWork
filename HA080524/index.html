@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Passwort Generator</title>
+</head>
+<body>
+    <h1>Aufgabe 1 bis 3</h1>
+  <button onclick="generatePassword()">Passwort generieren</button>
+  <p id="password">--------</p>
+
+  <hr/>
+
+  <button onclick="changeColor()">change Color</button>
+
+  <script>
+    function generatePassword() {
+      const length = Math.floor(Math.random() * (12 - 6 + 1)) + 6;
+      const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+"; // Zeichensatz für das Passwort
+      let password = "";
+      for (let i = 0; i < length; i++) {
+        const randomIndex = Math.floor(Math.random() * charset.length);
+        password += charset[randomIndex];
+      }
+      document.getElementById("password").textContent = password;
+    }
+
+
+    function changeColor() {
+      const button = document.getElementById("password");
+      const randomColor = "#" + Math.floor(Math.random()*16777215).toString(16); // Zufällige Farbe generieren
+      button.style.backgroundColor = randomColor;
+    }
+
+
+  </script>
+</body>
+</html>
