@@ -1,0 +1,40 @@
+#myList {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #myList li {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    text-align: center;
+  }
+  
+  #myList li input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  #myList li button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  #myList li div {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  
+  #myList li {
+    margin-bottom: 10px; /* Abstand zwischen den Elementen */
+    list-style-type: none; /* Listenpunkte entfernen */
+  }
+  
+  #myList li button {
+    margin-left: 10px; /* Abstand zwischen Text und Button */
+  }
