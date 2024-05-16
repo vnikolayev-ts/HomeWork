@@ -29,7 +29,7 @@ app.post('/register', (req, res) => {
             return res.status(500).send('Fehler beim Schreiben der Datei');
         }
 
-        // Zeitstempel in 10 Minuten berechnen
+        // Zeitstempel in 10 Minuten 
         const confirmationDeadline = new Date(Date.now() + 10 * 60000);
         const confirmationTime = confirmationDeadline.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' });
 
