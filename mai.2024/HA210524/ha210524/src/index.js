@@ -39,7 +39,7 @@ function App() {
       <h3>Addition von {randomNum2} und {randomNum3}: {add(randomNum2, randomNum3)}</h3>
       <h3>Quadratwurzel von {randomNum5}: {sqrt(randomNum5)}</h3>
       <p>Zufällige Zahl zwischen 1 und 100: {randomNum}</p>
-      <p>Heutiges Datum: {currentDate}</p>
+      <p>Heutiges Datum: <b>{currentDate}</b></p>
     </div>
   );
 }
