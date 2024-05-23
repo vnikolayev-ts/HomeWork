@@ -2,7 +2,7 @@
 import React from 'react';
 import '../styles/ShopperListing.css';
 
-function ShopperListing({ title, price, image, productInfo, color, dimensions, releaseDate, manufacturer, category }) {
+function ShopperListing({ title, price, image, productInfo, color, size, releaseDate, manufacturer, category }) {
   return (
     <div className="shopper-listing">
       <h2>{title}</h2>
