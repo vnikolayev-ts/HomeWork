@@ -31,3 +31,18 @@
     margin-bottom: 8px;
   }
   
+
+  .regprice {
+    text-decoration: line-through;
+
+  }
+
+  .actionprice{
+
+    color:red;
+  }
+
+  .filter-buttons button.active {
+    background-color: #00008B; /* Dunkelblaue Hintergrundfarbe */
+    color: #fff; /* Weiße Textfarbe */
+  }
